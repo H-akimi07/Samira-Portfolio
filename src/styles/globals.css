@@ -37,6 +37,10 @@ body {
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+
+  transition:
+    background-color 400ms var(--ease-smooth),
+    color 400ms var(--ease-smooth);
 }
 
 body,
@@ -313,4 +317,25 @@ pre,
   .foundation-screen p {
     font-size: 1rem;
   }
+}
+
+/*    TEMPORARY SECTION PREVIEW    */
+
+.demo-section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding-block: var(--section-space);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.demo-section h2 {
+  max-width: 900px;
+
+  font-size: var(--text-h2);
+
+  color: var(--color-text-primary);
 }

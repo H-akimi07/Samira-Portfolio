@@ -1,31 +1,33 @@
 import SiteShell from "./components/layout/SiteShell";
+import Navbar from "./components/navigation/Navbar";
+import Hero from "./sections/Hero/Hero";
 
 function App() {
   return (
     <SiteShell>
+      <Navbar />
+
       <main>
-        <section className="foundation-screen">
-          <div className="container">
-            <span className="foundation-label">
-              SAMIRA HAKIMI / DIGITAL LAB
-            </span>
+        <Hero />
 
-            <h1>
-              Building digital
-              <br />
-              systems.
-            </h1>
+        <section id="work" className="demo-section">
+          <span>01 / WORK</span>
+          <h2>Selected work.</h2>
+        </section>
 
-            <p>
-              A personal technology portfolio for what I build, learn, and
-              explore.
-            </p>
+        <section id="lab" className="demo-section">
+          <span>02 / LAB</span>
+          <h2>What I explore.</h2>
+        </section>
 
-            <div className="foundation-signal">
-              <span />
-              FOUNDATION / 01
-            </div>
-          </div>
+        <section id="journey" className="demo-section">
+          <span>03 / JOURNEY</span>
+          <h2>What I learn.</h2>
+        </section>
+
+        <section id="contact" className="demo-section">
+          <span>04 / CONTACT</span>
+          <h2>Let&apos;s connect.</h2>
         </section>
       </main>
     </SiteShell>

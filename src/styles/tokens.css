@@ -138,3 +138,26 @@
   --z-overlay: 500;
   --z-modal: 1000;
 }
+
+/*    LIGHT THEME    */
+
+[data-theme="light"] {
+  --color-background: #f4f4f2;
+
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-surface-navy: #e8edf5;
+
+  --color-text-primary: #000000;
+  --color-text-secondary: #333333;
+  --color-text-muted: #686868;
+
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-strong: rgba(0, 0, 0, 0.18);
+  --color-border-gold: rgba(252, 163, 17, 0.55);
+
+  --color-gold-soft: rgba(252, 163, 17, 0.12);
+  --color-gold-glow: rgba(252, 163, 17, 0.2);
+
+  --shadow-soft: 0 20px 60px rgba(20, 33, 61, 0.08);
+}
