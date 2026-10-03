@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import projects from "../../data/projects";
 import "./Work.css";
 
@@ -77,14 +78,14 @@ function Work() {
                 </div>
 
                 <div className="project__footer">
-                  <a
-                    href={`#${project.id}`}
+                  <Link
+                    to={`/project/${project.id}`}
                     className="project__explore"
                     aria-label={`Explore ${project.title}`}
                   >
                     Explore experiment
                     <ArrowUpRight size={16} strokeWidth={1.7} />
-                  </a>
+                  </Link>
 
                   <span className="project__index">{project.number} / 04</span>
                 </div>
