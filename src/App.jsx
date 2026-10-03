@@ -1,7 +1,7 @@
 import SiteShell from "./components/layout/SiteShell";
 import Navbar from "./components/navigation/Navbar";
 import Hero from "./sections/Hero/Hero";
-
+import Work from "./sections/Work/Work";
 function App() {
   return (
     <SiteShell>
@@ -10,10 +10,7 @@ function App() {
       <main>
         <Hero />
 
-        <section id="work" className="demo-section">
-          <span>01 / WORK</span>
-          <h2>Selected work.</h2>
-        </section>
+        <Work />
 
         <section id="lab" className="demo-section">
           <span>02 / LAB</span>
