@@ -57,14 +57,16 @@ function ProjectCaseStudy({ project }) {
             </div>
 
             <div className="case-study__hero-visual">
-              <ProjectScene projectId={project.id} />
-
+              <ProjectScene
+                projectId={project.id}
+                visualType={project.visualType}
+              />
               <span className="case-study__visual-label">
                 SYSTEM / {project.number}
               </span>
 
               <span className="case-study__visual-coordinate">
-                MEETMIND / AI CORE
+                {project.category}
               </span>
             </div>
           </div>
