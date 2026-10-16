@@ -66,7 +66,7 @@ function ProjectCaseStudy({ project }) {
               </span>
 
               <span className="case-study__visual-coordinate">
-                {project.category}
+                {project.visualLabel || project.shortTitle}
               </span>
             </div>
           </div>

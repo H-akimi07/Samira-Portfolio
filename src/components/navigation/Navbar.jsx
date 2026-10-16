@@ -3,10 +3,12 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import "./Navbar.css";
 
 const navItems = [
-  { label: "Work", href: "#work" },
-  { label: "Lab", href: "#lab" },
-  { label: "Journey", href: "#journey" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/#work" },
+  { label: "How I Build", href: "/#how-i-build" },
+  { label: "Lab", href: "/#lab" },
+  { label: "Journey", href: "/#journey" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 function Navbar() {

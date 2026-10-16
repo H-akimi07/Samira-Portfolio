@@ -93,8 +93,8 @@ const projects = [
 
     visualType: "meeting-system",
 
-    githubUrl: "",
-    demoUrl: "",
+    githubUrl: "https://github.com/H-akimi07/MeetMind--AI-assistant-",
+    demoUrl: "https://meet-mind-ai-assistant.vercel.app/",
   },
 
   {
@@ -163,12 +163,12 @@ const projects = [
 
     visualType: "language-system",
 
-    githubUrl: "",
-    demoUrl: "",
+    githubUrl: "https://github.com/H-akimi07/pollyglot-ai",
+    demoUrl: "https://pollyglot-ai-translator-six.vercel.app/",
   },
 
   {
-    id: "vibe",
+    id: "vibe Music Platform",
     number: "03",
     title: "VIBE",
     shortTitle: "Music Discovery Platform",
@@ -235,8 +235,8 @@ const projects = [
 
     visualType: "sound-system",
 
-    githubUrl: "",
-    demoUrl: "",
+    githubUrl: "https://github.com/H-akimi07/vibe-music-platform",
+    demoUrl: "https://vibe-music-platform.vercel.app/",
   },
 
   {
@@ -303,8 +303,85 @@ const projects = [
 
     visualType: "planning-system",
 
-    githubUrl: "",
-    demoUrl: "",
+    githubUrl: "https://github.com/H-akimi07/AI-study-planner",
+    demoUrl: "https://ai-study-planner-nu-six.vercel.app/",
+  },
+
+  {
+    id: "popchoice",
+    number: "05",
+    title: "PopChoice",
+    shortTitle: "AI Movie Recommendations",
+    category: "AI / Semantic Search",
+    featured: false,
+
+    description:
+      "An AI-powered movie recommendation app that matches users with films based on their personal taste, favorite movies, and current mood.",
+
+    problem:
+      "Browsing large movie catalogs and choosing genres alone can make it difficult to discover films that genuinely match someone's preferences.",
+
+    idea: "PopChoice understands why a user enjoys a particular movie, combines that information with their preferred movie era and mood, and searches for a semantically relevant recommendation.",
+
+    systemIntro:
+      "The application transforms user preferences into a semantic representation, searches a movie database for a close match, and generates a personalized explanation.",
+
+    systemFlow: [
+      "User preferences",
+      "Favorite movie and reason",
+      "Movie type and mood",
+      "OpenAI embeddings",
+      "Vector similarity search",
+      "Supabase movie database",
+      "Matching movie",
+      "AI-generated explanation",
+    ],
+
+    technologies: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "OpenAI Embeddings",
+      "Supabase",
+      "Vector Similarity Search",
+    ],
+
+    features: [
+      "Personalized movie recommendations",
+      "Favorite movie and preference input",
+      "New or Classic movie selection",
+      "Mood-based recommendations",
+      "Semantic search using embeddings",
+      "AI-generated recommendation explanations",
+      "Taste profile display",
+      "Cinematic loading experience",
+      "Responsive interface",
+      "Restart and discover another movie",
+    ],
+
+    challenges: [
+      "Representing user preferences in a way that captures meaning rather than relying only on keywords.",
+      "Finding relevant movies through vector similarity search.",
+      "Explaining why the recommended movie matches the user's preferences.",
+    ],
+
+    solutions: [
+      "Convert preference information into semantic embeddings.",
+      "Search the Supabase movie database using vector similarity.",
+      "Use AI to generate a personalized explanation for the selected movie.",
+    ],
+
+    learning:
+      "This project strengthened my understanding of AI-powered applications, semantic embeddings, vector search, database integration, and personalized recommendation systems.",
+
+    nextExperiment:
+      "Explore richer preference profiles, improved recommendation evaluation, and ways to make recommendations more diverse.",
+
+    visualType: "sound-system",
+    visualLabel: "SEMANTIC MOVIE DISCOVERY",
+
+    githubUrl: "https://github.com/H-akimi07/PopChoice-AI",
+    demoUrl: "https://popchoice-ai-taupe.vercel.app/",
   },
 ];
 

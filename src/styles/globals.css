@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap");
 
 @import "./tokens.css";
 
@@ -17,7 +19,7 @@ html {
   background: var(--color-background);
 }
 
-body {
+/* body {
   margin: 0;
   min-width: 320px;
 
@@ -38,6 +40,27 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
+  transition:
+    background-color 400ms var(--ease-smooth),
+    color 400ms var(--ease-smooth);
+} */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(
+      ellipse at 72% 8%,
+      rgba(25, 34, 57, 0.25),
+      transparent 36rem
+    ),
+    var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   transition:
     background-color 400ms var(--ease-smooth),
     color 400ms var(--ease-smooth);
@@ -97,7 +120,7 @@ p {
   margin: 0;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -107,6 +130,18 @@ h6 {
   font-weight: var(--weight-semibold);
   line-height: var(--leading-heading);
   letter-spacing: var(--tracking-heading);
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-tight);
 }
 
 h1 {

@@ -2,6 +2,8 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import MeetMindSystem from "./MeetMindSystem";
 import LanguageSystem from "./LanguageSystem";
+import SoundSystem from "./SoundSystem";
+import PlanningSystem from "./PlanningSystem";
 
 function ProjectVisual({ visualType }) {
   switch (visualType) {
@@ -12,10 +14,10 @@ function ProjectVisual({ visualType }) {
       return <LanguageSystem />;
 
     case "sound-system":
-      return null;
+      return <SoundSystem />;
 
     case "planning-system":
-      return null;
+      return <PlanningSystem />;
 
     default:
       return null;

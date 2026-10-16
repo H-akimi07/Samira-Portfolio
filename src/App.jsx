@@ -5,30 +5,27 @@ import Navbar from "./components/navigation/Navbar";
 
 import Hero from "./sections/Hero/Hero";
 import Work from "./sections/Work/Work";
+import HowIBuild from "./sections/HowIBuild/HowIBuild";
+import Lab from "./sections/Lab/Lab";
+import Journey from "./sections/Journey/Journey";
+import Skills from "./sections/Skills/Skills";
+import Next from "./sections/Next/Next";
+import Contact from "./sections/Contact/Contact";
 
 import ProjectPage from "./pages/Project/ProjectPage";
 
 function HomePage() {
   return (
-    <>
+    <div id="top">
       <Hero />
       <Work />
-
-      <section id="lab" className="demo-section">
-        <span>03 / LAB</span>
-        <h2>What I explore.</h2>
-      </section>
-
-      <section id="journey" className="demo-section">
-        <span>04 / JOURNEY</span>
-        <h2>What I learn.</h2>
-      </section>
-
-      <section id="contact" className="demo-section">
-        <span>05 / CONTACT</span>
-        <h2>Let&apos;s connect.</h2>
-      </section>
-    </>
+      <HowIBuild />
+      <Lab />
+      <Journey />
+      <Skills />
+      <Next />
+      <Contact />
+    </div>
   );
 }
 
@@ -40,7 +37,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-
           <Route path="/project/:projectId" element={<ProjectPage />} />
         </Routes>
       </SiteShell>
